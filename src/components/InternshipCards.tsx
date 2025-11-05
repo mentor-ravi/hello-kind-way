@@ -194,7 +194,7 @@ const InternshipCards = () => {
                     </CardDescription>
                   </CardHeader>
 
-                  <CardContent className="space-y-6">
+                  <CardContent className="flex items-center justify-between gap-4">
                     <div className="flex flex-wrap gap-2">
                       {internship.duration && (
                         <Badge variant="outline" className="text-xs">
@@ -208,7 +208,7 @@ const InternshipCards = () => {
                     </div>
 
                     <Button 
-                      className="w-full gap-2 shadow-sm"
+                      className="gap-2 shadow-sm flex-shrink-0"
                       onClick={() => handleApplyClick(internship.id)}
                     >
                       Apply Now
