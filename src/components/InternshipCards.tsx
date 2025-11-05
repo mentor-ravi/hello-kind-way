@@ -194,7 +194,7 @@ const InternshipCards = () => {
                     </CardDescription>
                   </CardHeader>
 
-                  <CardContent className="space-y-4">
+                  <CardContent className="space-y-6">
                     <div className="flex flex-wrap gap-2">
                       {internship.duration && (
                         <Badge variant="outline" className="text-xs">
@@ -207,15 +207,13 @@ const InternshipCards = () => {
                       </Badge>
                     </div>
 
-                    <div className="flex gap-2 pt-2">
-                      <Button 
-                        className="w-full gap-2 shadow-sm"
-                        onClick={() => handleApplyClick(internship.id)}
-                      >
-                        Apply Now
-                        <ChevronRight className="w-4 h-4" />
-                      </Button>
-                    </div>
+                    <Button 
+                      className="w-full gap-2 shadow-sm"
+                      onClick={() => handleApplyClick(internship.id)}
+                    >
+                      Apply Now
+                      <ChevronRight className="w-4 h-4" />
+                    </Button>
                   </CardContent>
                 </Card>
               );
